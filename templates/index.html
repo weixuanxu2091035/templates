@@ -4,7 +4,7 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Weixuan</title>
-	<link rel="icon" href="Images/icon.ico">
+	<link rel="icon" href="{{ url_for('static', filename='Images/icon.ico') }}">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=League+Spartan&display=swap" rel="stylesheet">
@@ -14,7 +14,7 @@
 
 	<!-- Header Section -->
 	<header>
-		<img src="Images/Weixuan_Xu.JPG">
+		<img src="{{ url_for('static', filename='Images/Weixuan_Xu.JPG') }}">
 		<h1>Weixuan Xu</h1>
 	</header>
 
@@ -30,11 +30,11 @@
 
 		<!-- Hobbies Section -->
 		<h2>Hobbies</h2>
-		<p><img src="{{ url_for('static', filename='Images/reading.jpeg') }}"></p>
+		<p><img src="{{ url_for('static', filename='Images/dancing.jpeg') }}"></p>
 		<p>Dancing</p>
-		<p><img src="Images/singing.png"></p>
+		<p><img src="{{ url_for('static', filename='Images/singing.jpeg') }}"></p>
 		<p>Singing</p>
-		<p><img src="Images/reading.jpeg"></p>
+		<p><img src="{{ url_for('static', filename='Images/reading.jpeg') }}"></p>
 		<p>Reading</p>
 		
 		<!-- Friends Section -->
